@@ -1,0 +1,23 @@
+.wave-bouncing-loading-animation{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: min(60px,6vw);
+    color: #3c2e9e;
+    -webkit-box-reflect: below -0.4em linear-gradient(transparent, #00000045);
+}
+.wave-bouncing-loading-animation > span {
+    display: inline-block;
+    font-weight: bolder;
+    animation: bouncing-wave-animation 2s infinite;
+    animation-delay: calc(.25s * var(--item));
+}
+@keyframes bouncing-wave-animation {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-0.4em);
+    }
+}
