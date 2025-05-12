@@ -40,6 +40,17 @@
   --see-more-font: "UTM-Cafeta", sans-serif;
 }
 
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1200px;
+  }
+}
+
 @media (min-width: 1850px) {
   .container,
   .container-lg,
@@ -47,7 +58,7 @@
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1540px;
+    max-width: 1500px;
   }
 }
 
@@ -1428,7 +1439,7 @@ select#input-sort {
 .messenger-float {
   display: none;
   position: fixed;
-  bottom: 30%;
+  bottom: 15%;
   right: 1%;
   z-index: 1;
 }
@@ -1547,6 +1558,14 @@ select#input-sort {
   .image-info {
     flex-direction: column;
   }
+
+  .left-banner {
+    display: none;
+  }
+
+  .right-banner {
+    display: none;
+  }
 }
 /* Trên màn hình nhỏ (sm: 640px) trở lên, hiển thị 2 cột (tương ứng với 'sm:grid-cols-2') */
 @media (min-width: 640px) {
@@ -1565,7 +1584,15 @@ select#input-sort {
   }
 
   .listgame {
-    width: 75%;
+    width: 80%;
+  }
+
+  .left-banner {
+    display: none;
+  }
+
+  .right-banner {
+    display: none;
   }
 }
 
@@ -1585,17 +1612,53 @@ select#input-sort {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .my-grid-container-list-game {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .messenger-float {
     display: block;
   }
+
 }
 
+@media screen and (min-width: 1500px) {
+  .left-banner {
+    display: block;
+    position: fixed;
+    left: 20px; /* Adjust the distance from the left edge */
+    top: 50%; /* Position vertically in the middle of the viewport */
+    transform: translateY(-50%); /* Adjust for the banner's height */
+    z-index: 10; /* Ensure it's above other content */
+    /* Add your banner styles here: */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .right-banner {
+    display: block;
+    position: fixed;
+    right: 20px; /* Adjust the distance from the right edge */
+    top: 50%; /* Position vertically in the middle of the viewport */
+    transform: translateY(-50%); /* Adjust for the banner's height */
+    z-index: 10; /* Ensure it's above other content */
+    /* Add your banner styles here: */
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 1px solid #bbb;
+  }
+  .left-banner img, .right-banner img {
+    width: 100px;
+    height: auto;
+  }
+}
 @media (min-width: 1900px) {
   .my-grid-container-list-game {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .left-banner img, .right-banner img {
+    width: 150px;
+    height: auto;
   }
 }
 
@@ -1615,7 +1678,7 @@ select#input-sort {
 }
 
 .sidebar {
-  width: 20%;
+  width: 15%;
   /* Adjust as needed */
   background-color: #f0f0f0;
   padding: 20px;
@@ -1682,8 +1745,8 @@ select#input-sort {
 }
 
 .add-to-cart {
-  border: 1px solid var(--primary-color); 
-  color: var(--primary-color); 
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   background-color: #fff;
 }
 
@@ -1702,7 +1765,10 @@ select#input-sort {
   font-size: 1.2em; /* Adjust size as needed */
 }
 
-.price-tag, .status-tag, .button-list, .action-buttons {
+.price-tag,
+.status-tag,
+.button-list,
+.action-buttons {
   margin: 20px 0;
 }
 
