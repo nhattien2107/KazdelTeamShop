@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Kazdel Team</title>
   <meta charset="utf-8">
@@ -19,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="/css/preloader,css">
+  <link rel="stylesheet" href="/css/preloader,css">
 </head>
 
 <body>
@@ -134,7 +135,7 @@
     </symbol>
   </svg>
 
-  <div class="wave-bouncing-loading-animation"  role="alert" aria-busy="true" aria-label="Loading">
+  <div class="wave-bouncing-loading-animation" role="alert" aria-busy="true" aria-label="Loading">
     <span style="--item:1">K</span>
     <span style="--item:2">A</span>
     <span style="--item:3">Z</span>
@@ -145,7 +146,7 @@
     <span style="--item:8">E</span>
     <span style="--item:9">A</span>
     <span style="--item:10">M</span>
-</div>
+  </div>
 
   <div class="search-popup">
     <div class="search-popup-container">
@@ -208,9 +209,8 @@
     <nav id="header-nav" class="navbar navbar-expand-lg py-3">
       <div class="container">
         <form role="search" method="get" class="search-form-nav" action="">
-          <input type="search" id="search-form-nav" class="search-field" placeholder="Tìm kiếm" value=""
-            name="s" />     
-            <button type="submit" class="search-submit"><svg class="search" style="width: 20px; height: 20px;">
+          <input type="search" id="search-form-nav" class="search-field" placeholder="Tìm kiếm" value="" name="s" />
+          <button type="submit" class="search-submit"><svg class="search" style="width: 20px; height: 20px;">
               <use xlink:href="#search"></use>
             </svg></button>
         </form>
@@ -241,13 +241,25 @@
                 <a class="nav-link me-4 active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-4" href="index.html">Games</a>
+                <a class="nav-link me-4" href="listgame.html">Games</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link me-4" href="index.html">Nạp Games</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link me-4" href="index.html">Cày Thuê</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">Cày Thuê</a>
+                <ul class="dropdown-menu animate slide border">
+                  <li>
+                    <a href="index.html" class="dropdown-item fw-light">Genshin Impact</a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="dropdown-item fw-light">Honkai: Star Rail</a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="dropdown-item fw-light">Wuthering Waves</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link me-4" href="index.html">Thanh Toán</a>
@@ -322,8 +334,9 @@
                                   <span class="label-body"><a href="#" class="fw-bold">Forgot Password</a></span>
                                 </label>
                                 <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Login</button>
-                                <hr/>
-                                Login with: <a href="#"><img src="/images/Discord-logo.png" alt="discord" class="social-icon" width="70px"></a>
+                                <hr />
+                                Login with: <a href="#"><img src="/images/Discord-logo.png" alt="discord"
+                                    class="social-icon" width="70px"></a>
                               </div>
                               <div class="tab-pane fade" id="nav-register" role="tabpanel"
                                 aria-labelledby="nav-register-tab">
@@ -512,8 +525,8 @@
     </div>
   </section>
 
-  <div class="left-banner"><img src="/images/side-banner1.jpeg" alt="" srcset="" width="150px"></div>
-  <div class="right-banner"><img src="/images/side-banner1.jpeg" alt="" srcset="" width="150px"></div>
+  <div class="left-banner"><img src="/images/Banner_doc1.png" alt="" srcset="" width="150px"></div>
+  <div class="right-banner"><img src="/images/Banner_doc2.png" alt="" srcset="" width="150px"></div>
   <section id="company-services" class="padding-medium pb-0">
     <div class="container">
       <div class="row">
@@ -580,7 +593,8 @@
         <!-- <a href="index.html" class="btn">Xem tất cả</a> -->
       </div>
       <nav>
-        <div class="nav nav-pills" id="nav-tab" role="tablist" style="border-bottom: 1px solid var(--bs-border-color-translucent);">
+        <div class="nav nav-pills" id="nav-tab" role="tablist"
+          style="border-bottom: 1px solid var(--bs-border-color-translucent);">
           <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
             type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tất cả</button>
           <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
@@ -589,18 +603,21 @@
             role="tab" aria-controls="nav-contact" aria-selected="false">CN</button>
         </div>
       </nav>
-      <div class="tab-content" id="nav-tabContent">       
+      <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
           <div class="my-grid-container padding-xsmall">
             <div class="grid-item card">
               <a href="/src/listgame.html"><img
-                src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
-                class="img-fluid shadow-sm" alt="product item"></a>
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="/src/listgame.html">Honkai: Star Rail</a></h6>
+                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
+                  class="img-fluid shadow-sm" alt="product item"></a>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="/src/listgame.html">Honkai: Star
+                  Rail</a></h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
-                <div class="rating text-warning d-flex align-items-center">
-                  <a href="/src/listgame.html"><img src="/images/Xem_them.png" alt="xem thêm" srcset="" width="100%"></a>
+                <div class="rating text-warning d-flex" style="align-self: center;">
+                 <button class="xem-them-button-list text-sm ">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <!-- <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
@@ -622,13 +639,16 @@
             <div class="grid-item card">
               <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Genshin Impact</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Genshin Impact</a>
+              </h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
               </div>
-              <div class="rating text-warning d-flex align-items-center">
-                <img src="/images/Xem_them.png" alt="xem thêm" srcset="" width="100%">
-              </div>
+              <div class="rating text-warning d-flex" style="align-self: center;">
+                 <button class="xem-them-button-list text-sm ">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
+                </div>
               <!-- <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
                 <button type="button" href="#" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top"
                   data-bs-title="Tooltip on top">
@@ -649,7 +669,8 @@
               <img
                 src="https://preview.redd.it/zenless-zone-zero-icon-v0-9ss6qz6tuwx81.png?width=1080&crop=smart&auto=webp&s=3818f47bf93f33a46ec714258e552ac0363873c6"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Zenless Zone Zero</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Zenless Zone
+                  Zero</a></h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
               </div>
@@ -678,7 +699,8 @@
               </div>
               <img src="https://cdn2.steamgriddb.com/icon_thumb/9d435d2e017f7a7384f4e1c6a6f2d169.png"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Wuthering Waves</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Wuthering Waves</a>
+              </h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Kuro Games</p>
               </div>
@@ -705,7 +727,8 @@
               <img
                 src="https://play-lh.googleusercontent.com/wXEb6Qzgul41I9GOzjHVVEBHYn13fxqJRXb9O12Sx4G_aMkKU2O3Vp2GTEZVGDDiyd8"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Punishing Gray Raven</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Punishing Gray
+                  Raven</a></h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Kuro Games</p>
               </div>
@@ -732,7 +755,8 @@
               <img
                 src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Honkai: Star Rail</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Honkai: Star
+                  Rail</a></h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                 <div class="rating text-warning d-flex align-items-center">
@@ -758,7 +782,8 @@
             <div class="grid-item card">
               <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Genshin Impact</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Genshin Impact</a>
+              </h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
               </div>
@@ -785,7 +810,8 @@
               <img
                 src="https://preview.redd.it/zenless-zone-zero-icon-v0-9ss6qz6tuwx81.png?width=1080&crop=smart&auto=webp&s=3818f47bf93f33a46ec714258e552ac0363873c6"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Zenless Zone Zero</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Zenless Zone
+                  Zero</a></h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
               </div>
@@ -814,7 +840,8 @@
               </div>
               <img src="https://cdn2.steamgriddb.com/icon_thumb/9d435d2e017f7a7384f4e1c6a6f2d169.png"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Wuthering Waves</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Wuthering Waves</a>
+              </h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Kuro Games</p>
               </div>
@@ -841,7 +868,8 @@
               <img
                 src="https://play-lh.googleusercontent.com/wXEb6Qzgul41I9GOzjHVVEBHYn13fxqJRXb9O12Sx4G_aMkKU2O3Vp2GTEZVGDDiyd8"
                 class="img-fluid shadow-sm" alt="product item">
-              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Punishing Gray Raven</a></h6>
+              <h6 class="mt-4 mb-0 fw-bold" style="color: #000; height: 41px;"><a href="index.html">Punishing Gray
+                  Raven</a></h6>
               <div class="review-content d-flex flex-column">
                 <p class="my-2 me-2 fs-6 text-black-50">Kuro Games</p>
               </div>
@@ -886,62 +914,31 @@
             </div>
             <div class="items-lists">
               <div class="item d-flex">
-                <img
-                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
+                <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">Echoes of the Ancients</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Genshin Impact</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <hr class="gray-400">
               <div class="item d-flex">
-                <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
+                <img
+                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">The Midnight Garden</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Honkai: Star Rail</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <hr>
@@ -950,29 +947,13 @@
                   src="https://preview.redd.it/zenless-zone-zero-icon-v0-9ss6qz6tuwx81.png?width=1080&crop=smart&auto=webp&s=3818f47bf93f33a46ec714258e552ac0363873c6"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">Shadow of the Serpent</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Zenless Zone Zero</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -985,62 +966,31 @@
             </div>
             <div class="items-lists">
               <div class="item d-flex">
-                <img
-                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
+                <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">Echoes of the Ancients</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Genshin Impact</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <hr class="gray-400">
               <div class="item d-flex">
-                <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
+                <img
+                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">The Midnight Garden</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Honkai: Star Rail</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <hr>
@@ -1049,29 +999,13 @@
                   src="https://preview.redd.it/zenless-zone-zero-icon-v0-9ss6qz6tuwx81.png?width=1080&crop=smart&auto=webp&s=3818f47bf93f33a46ec714258e552ac0363873c6"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">Shadow of the Serpent</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Zenless Zone Zero</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1084,93 +1018,45 @@
             </div>
             <div class="items-lists">
               <div class="item d-flex">
-                <img
-                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
+                <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">Echoes of the Ancients</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Genshin Impact</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <hr class="gray-400">
               <div class="item d-flex">
-                <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
+                <img
+                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">The Midnight Garden</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Honkai: Star Rail</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <hr>
               <div class="item d-flex">
-                <img
-                  src="https://preview.redd.it/zenless-zone-zero-icon-v0-9ss6qz6tuwx81.png?width=1080&crop=smart&auto=webp&s=3818f47bf93f33a46ec714258e552ac0363873c6"
+                <img src="https://cdn2.steamgriddb.com/icon_thumb/9d435d2e017f7a7384f4e1c6a6f2d169.png"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">Shadow of the Serpent</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Wuthering Waves</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Kuro Games</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1183,33 +1069,16 @@
             </div>
             <div class="items-lists">
               <div class="item d-flex">
-                <img
-                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
+                <img src="https://cdn2.steamgriddb.com/icon_thumb/9d435d2e017f7a7384f4e1c6a6f2d169.png"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">Echoes of the Ancients</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Wuthering Waves</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Kuro Games</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <hr class="gray-400">
@@ -1217,59 +1086,28 @@
                 <img src="https://cdn2.steamgriddb.com/icon_thumb/73e5080f0f3804cb9cf470a8ce895dac.png"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">The Midnight Garden</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Genshin Impact</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
               <hr>
               <div class="item d-flex">
                 <img
-                  src="https://preview.redd.it/zenless-zone-zero-icon-v0-9ss6qz6tuwx81.png?width=1080&crop=smart&auto=webp&s=3818f47bf93f33a46ec714258e552ac0363873c6"
+                  src="https://img.utdstc.com/icon/68d/131/68d13114b6d60f8570133274979c031fbee9e46e01608957469627de6f4f6e1e:200"
                   class="img-fluid shadow-sm" alt="product item">
                 <div class="item-content ms-3">
-                  <h6 class="mb-0 fw-bold"><a href="index.html">Shadow of the Serpent</a></h6>
+                  <h6 class="mb-0 fw-bold"><a href="index.html">Honkai: Star Rail</a></h6>
                   <div class="review-content d-flex">
-                    <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
-
-                    <div class="rating text-warning d-flex align-items-center">
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                      <svg class="star star-fill">
-                        <use xlink:href="#star-fill"></use>
-                      </svg>
-                    </div>
+                    <p class="my-2 me-2 fs-6 text-black-50">Mihoyo</p>
                   </div>
-                  <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
+                  <button class="xem-them-button text-sm">
+                    <span class="gradient-text">Xem Thêm</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1298,7 +1136,8 @@
         <div class="col-md-3 posts mb-4">
           <img src="/images/post-item2.jpg" alt="post image" class="img-fluid rounded-3">
           <a href="blog.html" class="fs-6 text-primary">Games</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Honkai: Star Rail Concert 2025</a></h4>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="index.html">Honkai: Star Rail Concert 2025</a>
+          </h4>
           <p class="mb-2">Explore the intersection of technology and sustainability in our latest blog post. Learn about
             the innovative <span><a class="text-decoration-underline text-black-50" href="index.html">Read
                 More</a></span> </p>
@@ -1388,10 +1227,10 @@
                     <a href="#">Lịch sử đơn hàng</a>
                   </li>
                   <li class="menu-item mb-1">
-                    <a href="#">Điều khoản dịch vụ</a>
+                    <a href="policy.html">Điều khoản dịch vụ</a>
                   </li>
                   <li class="menu-item mb-1">
-                    <a href="#">FaQs</a>
+                    <a href="#">Chính sách bảo mật</a>
                   </li>
                 </ul>
               </div>
